@@ -15,6 +15,7 @@ to <- c("vbrown@smithfield.com",
         "jbaldwin@smithfield.com",
         "ycastelo@smithfield.com",
         "rgholland@smithfield.com",
+        "lparr@smithfield.com",
         "vmurrillo@smithfield.com")
 
 subject <- "North Division Semen Orders"
@@ -28,6 +29,7 @@ msg <- c("See the attached semen orders by specialist, please use the submission
          mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/JASON_BALDWIN.xlsx"),
          mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/YOLANDA_CASTELO.xlsx"),
          mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/ROBERT_HOLLAND.xlsx"),
+         mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/LAURA_PARR.xlsx"),
          mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/ORDER_CHANGE_SUBMISSION_FORM.xlsx"))
 
 sendmail(from,to,subject,msg)
@@ -79,7 +81,6 @@ from <- "vbrown@smithfield.com"
 to <- c("vbrown@smithfield.com",
         "narmstrong@smithfield.com",
         "sbereza@smithfield.com",
-        "mpcarroll@smithfield.com",
         "rcollins@smithfield.com",
         "jdraughon@smithfield.com",
         "sjozefowicz@smithfield.com",
@@ -98,7 +99,6 @@ msg <- c("See the attached semen orders by specialist, please use the submission
          
          mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/NEIL_ARMSTRONG.xlsx"),
          mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/SEBASTIAN_BEREZA.xlsx"),
-         mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/MICHAEL_CARROLL.xlsx"),
          mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/RICKY_COLLINS.xlsx"),
          mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/JASON_DRAUGHON.xlsx"),
          mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/SLAWOMIR_JOZEFOWICZ.xlsx"),
@@ -121,7 +121,8 @@ to <- c("vbrown@smithfield.com",
         "robersonvillebs7094@smithfield.com",
         "askinsbs70920@smithfield.com",
         "DeercroftBS70810@smithfield.com",
-        "laurelhillbs70820@smithfield.com")
+        "laurelhillbs70820@smithfield.com",
+        "farm9644bs@smithfield.com")
 
 subject <- "Semen Orders File"
 
@@ -131,6 +132,7 @@ msg <- c("See the attached semen orders by stud and please confirm with Victor t
          mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/7093_orders.xlsx"),
          mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/7094_orders.xlsx"),
          mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/7081_orders.xlsx"),
-         mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/7082_orders.xlsx"))
+         mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/7082_orders.xlsx"),
+         mime_part("C:/Users/vance/Documents/projects/Working Project Directory/reports/reports-Semen-Orders/9644_orders.xlsx"))
 
 sendmail(from,to,subject,msg)

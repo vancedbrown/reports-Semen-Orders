@@ -7,7 +7,7 @@ library(openxlsx)
 orders <- read_excel("C:/Users/vance/Desktop/orders.xlsx", 
                      sheet = "Master")
 
-orders1<-orders[c(3,5,7,9,10,11,12:15,18,20:33,35)]
+orders1<-orders[c(3,5,7,9,10,11,12:15,18,19:33,35)]
 
 hs<- createStyle(textDecoration = "BOLD")
 
@@ -49,9 +49,6 @@ write.xlsx(jgainey,"JAMES_GAINEY.xlsx", colWidths="auto", headerStyle = hs)
 
 rgautier<-orders1 %>% filter(Specialist=="GAUTIER, RONALD A.")
 write.xlsx(rgautier,"RONALD_GAUTIER.xlsx", colWidths="auto", headerStyle = hs)
-
-dhall<-orders1 %>% filter(Specialist=="HALL, DWIGHT W.")
-write.xlsx(dhall,"BILL_HALL.xlsx", colWidths="auto", headerStyle = hs)
 
 rholland<-orders1 %>% filter(Specialist=="HOLLAND, ROBERT G.")
 write.xlsx(rholland,"ROBERT_HOLLAND.xlsx", colWidths="auto", headerStyle = hs)
@@ -98,14 +95,14 @@ write.xlsx(ewatts,"ERIC_WATTS.xlsx", colWidths="auto", headerStyle = hs)
 jworley<-orders1 %>% filter(Specialist=="WORLEY, JEFFERY D.")
 write.xlsx(jworley,"JEFF_WORLEY.xlsx", colWidths="auto", headerStyle = hs)
 
-jmercer<-orders1 %>% filter(Specialist=="MERCER, JENNA N.")
-write.xlsx(jmercer,"JENNA_MERCER.xlsx", colWidths="auto", headerStyle = hs)
-
-ksmith<-orders1 %>% filter(Specialist=="SMITH, KEVIN D.")
-write.xlsx(ksmith,"KEVIN_SMITH.xlsx", colWidths="auto", headerStyle = hs)
-
 rgarcia<-orders1 %>% filter(Specialist=="GARCIA RIVERA, RIGOBERTO DESIDERIO")
 write.xlsx(rgarcia,"RIGOBERTO_GARCIA.xlsx", colWidths="auto", headerStyle = hs)
+
+lparr<-orders1 %>% filter(Specialist=="PARR, LAURA A.")
+write.xlsx(lparr,"LAURA_PARR.xlsx", colWidths="auto", headerStyle = hs)
+
+lparr<-orders1 %>% filter(Specialist=="PARR, LAURA A.")
+write.xlsx(lparr,"LAURA_PARR.xlsx", colWidths="auto", headerStyle = hs)
 
 ####################### By Stud ##########################
 
@@ -126,6 +123,8 @@ write.xlsx(deer,"7081_orders.xlsx", colWidths="auto", headerStyle = hs)
 laur<-orders2 %>% filter(`Current BS`==7082)
 write.xlsx(laur,"7082_orders.xlsx", colWidths="auto", headerStyle = hs)
 
+maco<-orders2 %>% filter(`Current BS`==9644)
+write.xlsx(maco,"9644_orders.xlsx", colWidths="auto", headerStyle = hs)
 
 
 
